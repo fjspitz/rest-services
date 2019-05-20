@@ -20,4 +20,9 @@ public class ActivityRepositoryStub implements ActivityRepository {
 		
 		return activities;
 	}
+
+	@Override
+	public Activity findActivity(String activityId) {
+		return new Activity("Ping-Pong", 45);
+	}
 }
