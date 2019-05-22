@@ -8,13 +8,16 @@ public class Activity {
 	private String id;
 	private String description;
 	private int duration;
+	private User user;
 	
 	public Activity() { }
 	
-	public Activity(String description, int duration) {
+	public Activity(String id, String description, int duration, User user) {
 		super();
+		this.id = id;
 		this.description = description;
 		this.duration = duration;
+		this.user = user;
 	}
 	
 	public String getDescription() {
@@ -39,5 +42,13 @@ public class Activity {
 
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 }
